@@ -1,7 +1,7 @@
 .first-header {
   text-align: center;
-  padding-top: 15px;
-  padding-bottom: 15px;
+  padding-top: 10px;
+  padding-bottom: 10px;
   background-color: #F4F4F4;
 }
 
@@ -15,39 +15,91 @@
   color: #898989;
 }
 
-
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.host{
+  background-color: transparent;
+  border: 1px solid black;
+  color: #414143;
+  font-weight: 500;
+  letter-spacing: 0.1px;
+  
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.host:hover{
+  background-color: #E7E7E8;
+  color: #898989;
+  
+}
+
+.booking{
+  background-image: url("https://resources.turo.com/f/81934/1500x400/1b78692b7b/hp_ny_1500x400_2.jpg");
+  background-repeat: no-repeat;
+  height: 400px;
+  background-size: 100%;
+
+}
+
+@media screen and (max-width: 992px) {
+  .booking{
+    background-image: url("https://resources.turo.com/f/81934/1984x800/493e2d1fde/hp_ny_992x400-2x_2.jpg");
+    background-repeat: no-repeat;
+    height: 400px;
+    background-size: contain;
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.setRide{
+  background-color: white;
+  position: relative;
+  top: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 58%;
+  margin: 0 auto;
+  border-radius: 30px;
+  /* box-shadow: 1px 6px 20px black; */
+  padding: 0px 10px 0px 15px;
+}
+
+label{
+  font-size: 13px;
+}
+
+.locale, .from, .until{
   display: flex;
   flex-direction: column;
-  align-items: center;
+}
+
+.locale{
+  flex-grow: 2;
+}
+
+.from, .until{
+  border-left: 1px solid #C7C7C7;
+  padding: 0 10px 0 10px;
+  margin: 5px 0 5px 0;
+}
+
+input{
+  border: none;
+}
+
+input:focus{
+  outline: none;
+}
+
+.setRide button{
+  width:  42px;
+  height: 42px;
+  border-radius: 50%;
+  display: flex;
+  align-items:center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  background-color: #593CFB;
+  margin-right: -3px;
+  border: none;
   color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+  font-size: 20px;
 }

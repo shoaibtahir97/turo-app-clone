@@ -1,0 +1,19 @@
+.drive{
+    text-align: center;
+    
+}
+.find{
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bolder;
+    font-size: 88px;
+    color: #121214;
+}
+
+.explore{
+    font-size: 30px;
+    font-weight: bold;
+    box-shadow: inset 0em -30px #F2E9FF;
+    padding-bottom: 5px;
+    width: 60%;
+    margin: 0 auto;
+}
